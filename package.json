@@ -8,7 +8,7 @@
     "dev": "npm run build && nodemon --exec npx migrate-mongo up && ts-node src/index.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "build": "CI=false react-scripts build",
+    "build": "npm run clean && tsc",
     "clean": "rimraf dist",
     "format": "prettier --write \"src/**/*.ts\"",
     "migrate": "migrate-mongo up",

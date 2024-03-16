@@ -63,9 +63,9 @@ export const getMarketPlace = async (req: any, res: Response) => {
           likesCount: { $size: '$likes' },
           ratio: {
             $cond: [
-              { $eq: [ { $size: '$likes' }, 0 ] },
+              { $eq: [{ $size: '$likes' }, 0] },
               0,
-              { $divide: [ { $size: '$views' }, { $size: '$likes' } ] },
+              { $divide: [{ $size: '$views' }, { $size: '$likes' }] },
             ],
           },
         },
@@ -194,7 +194,6 @@ export const getMarketPlace = async (req: any, res: Response) => {
       return findPrompts
     }
     return null
-  
   }
 }
 export const getPromptCategory = async (req: any, res: Response) => {
