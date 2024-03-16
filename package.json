@@ -34,8 +34,7 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.4",
     "otp-generator": "^4.0.1",
-    "razorpay": "^2.9.1",
-    "rimraf": "^5.0.5"
+    "razorpay": "^2.9.1"
   },
   "devDependencies": {
     "@types/aws-sdk": "^2.7.0",
@@ -56,6 +55,7 @@
     "migrate-mongo": "^10.0.0",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.8",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
