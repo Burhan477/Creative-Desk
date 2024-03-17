@@ -1,42 +1,42 @@
 import mongoose, { Schema, Document } from 'mongoose'
 
-export interface IPrompt extends Document {
-  name: string
-  price: number
-  description: string
-  prompt_type: string
-  prompt_modal: string
-  landing_image_url: string
-  sample_images_url: string[]
-  words: number
-  tested: boolean
-  tips: boolean
-  hq_images: boolean
-  prompt: string
-  link: string
-  testing_prompt: string
-  prompt_instruction: string
-  image_verification_link: string
-  midjourny_profile_link: string
-  type_gpt: string
-  gpt_engine: string
-  preview_input: string
-  preview_output: string
-  model: string
-  sampler: string
-  width: number
-  height: number
-  cfg_scale: number
-  steps: number
-  seeds: string
-  CLIP_guidence: boolean
-  negative_prompt: string
-  category_id: mongoose.Types.ObjectId
-  sub_category_id: mongoose.Types.ObjectId
-  product_id: mongoose.Types.ObjectId
-  prompt_details: Record<string, unknown>
-  created_at: Date
-}
+// export interface PromptType extends Document {
+//   name: string
+//   price: number
+//   description: string
+//   prompt_type: string
+//   prompt_modal: string
+//   landing_image_url: string
+//   sample_images_url: string[]
+//   words: number
+//   tested: boolean
+//   tips: boolean
+//   hq_images: boolean
+//   prompt: string
+//   link: string
+//   testing_prompt: string
+//   prompt_instruction: string
+//   image_verification_link: string
+//   midjourny_profile_link: string
+//   type_gpt: string
+//   gpt_engine: string
+//   preview_input: string
+//   preview_output: string
+//   model: string
+//   sampler: string
+//   width: number
+//   height: number
+//   cfg_scale: number
+//   steps: number
+//   seeds: string
+//   CLIP_guidence: boolean
+//   negative_prompt: string
+//   category_id: mongoose.Types.ObjectId
+//   sub_category_id: mongoose.Types.ObjectId
+//   product_id: mongoose.Types.ObjectId
+//   prompt_details: Record<string, unknown>
+//   created_at: Date
+// }
 
 const PromptSchema: Schema = new Schema({
   name: { type: String, required: true },
@@ -98,4 +98,4 @@ const PromptSchema: Schema = new Schema({
   },
 })
 
-export const Prompt = mongoose.model<IPrompt>('prompts', PromptSchema)
+export const Prompt = mongoose.model<any>('prompts', PromptSchema)
